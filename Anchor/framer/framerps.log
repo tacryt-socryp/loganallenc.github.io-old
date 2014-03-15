@@ -1,16 +1,10 @@
-{"docName":"multipleviews","path":"~/Desktop/multipleviews","relativeImagePath":"images","imagePath":"~/Desktop/multipleviews/images","framerPath":"~/Desktop/multipleviews/framer","viewInfoPath":"~/Desktop/multipleviews/framer/views.multipleviews.js","logPaths":["/tmp/framerps.log","~/Desktop/multipleviews/framer/framerps.log"]}
+{"docName":"Anchor","path":"~/Developer/Framer/Anchor","relativeImagePath":"images","imagePath":"~/Developer/Framer/Anchor/images","framerPath":"~/Developer/Framer/Anchor/framer","viewInfoPath":"~/Developer/Framer/Anchor/framer/views.Anchor.js","logPaths":["/tmp/framerps.log","~/Developer/Framer/Anchor/framer/framerps.log"]}
 
-Running for ~/Desktop/multipleviews
-Edit: Exporting image
-PROGRESS: 25
-Menu: Exporting image
-PROGRESS: 50
-Home: Exporting image
-PROGRESS: 75
-3 views changed
-Skipping ~/Desktop/multipleviews/index.html (exists)
-Skipping ~/Desktop/multipleviews/app.js (exists)
-Skipping ~/Desktop/multipleviews/framer/framer.js (exists)
-Skipping ~/Desktop/multipleviews/framer/framerps.js (exists)
+Running for ~/Developer/Framer/Anchor
+0 views changed
+Skipping ~/Developer/Framer/Anchor/index.html (exists)
+Skipping ~/Developer/Framer/Anchor/app.js (exists)
+Skipping ~/Developer/Framer/Anchor/framer/framer.js (exists)
+Skipping ~/Developer/Framer/Anchor/framer/framerps.js (exists)
 
-SUCCESS: ~/Desktop/multipleviews
+SUCCESS: ~/Developer/Framer/Anchor

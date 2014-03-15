@@ -1,0 +1,16 @@
+{"docName":"multipleviews","path":"~/Desktop/multipleviews","relativeImagePath":"images","imagePath":"~/Desktop/multipleviews/images","framerPath":"~/Desktop/multipleviews/framer","viewInfoPath":"~/Desktop/multipleviews/framer/views.multipleviews.js","logPaths":["/tmp/framerps.log","~/Desktop/multipleviews/framer/framerps.log"]}
+
+Running for ~/Desktop/multipleviews
+Edit: Exporting image
+PROGRESS: 25
+Menu: Exporting image
+PROGRESS: 50
+Home: Exporting image
+PROGRESS: 75
+3 views changed
+Skipping ~/Desktop/multipleviews/index.html (exists)
+Skipping ~/Desktop/multipleviews/app.js (exists)
+Skipping ~/Desktop/multipleviews/framer/framer.js (exists)
+Skipping ~/Desktop/multipleviews/framer/framerps.js (exists)
+
+SUCCESS: ~/Desktop/multipleviews

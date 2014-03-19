@@ -2,7 +2,7 @@ html, body {
     font-family:"Raleway", sans-serif;
     padding:0;
     margin:0;
-    /*background-color:#ef4339;*/
+    overflow-x:hidden;
 }
 
 #head {
@@ -36,4 +36,19 @@ html, body {
 
 #headlinks a, #headlinks a:visited {
     color:#000;
+}
+
+#main {
+    background-color:#fff;
+    position:absolute;
+    top:105%;
+    width:100%;
+}
+
+#content {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1.3em;
+    padding:7% 0 7% 0;
 }

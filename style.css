@@ -2,17 +2,18 @@ html, body {
     font-family:"Raleway", sans-serif;
     padding:0;
     margin:0;
-    overflow-x:hidden;
 }
 
 #head {
     position:fixed;
+    top:0;
+    left:0;
     background-image:url("img/background.jpg");
-    background-size:cover;
     background-position:center;
+    background-size:cover;
     height:100%;
     width:100%;
-    display:block;
+    z-index:1;
 }
 
 #headtext {
@@ -40,51 +41,17 @@ html, body {
 
 #main {
     background-color:#fff;
-    position:absolute;
-    top:105%;
+    position:relative;
+    margin-top:60%;
     width:100%;
+    z-index:2;
 }
 
 #work {
     background-color:#1abc9c;
-    position:absolute;
+    position:relative;
     width:100%;
-}
-
-@media screen and (max-width: 510px) {
-    #work {
-        top:160%;
-    }
-}
-
-@media screen and (min-width: 511px) and (max-width: 659px) {
-    #work {
-        top:156%;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 659px) {
-    #work {
-        top:152%;
-    }
-}
-
-@media screen and (min-width: 660px) and (max-width: 710px) {
-    #work {
-        top:154%;
-    }
-}
-
-@media screen and (min-width: 711px) and (max-width: 989px) {
-    #work {
-        top:149%;
-    }
-}
-
-@media screen and (min-width: 990px) {
-    #work {
-        top:150%;
-    }
+    z-index:2;
 }
 
 .content {

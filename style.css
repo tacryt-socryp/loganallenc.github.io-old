@@ -45,15 +45,62 @@ html, body {
     width:100%;
 }
 
-#content {
+#work {
+    background-color:#1abc9c;
+    position:absolute;
+    width:100%;
+}
+
+@media screen and (max-width: 510px) {
+    #work {
+        top:160%;
+    }
+}
+
+@media screen and (min-width: 511px) and (max-width: 659px) {
+    #work {
+        top:156%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 659px) {
+    #work {
+        top:152%;
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width: 710px) {
+    #work {
+        top:154%;
+    }
+}
+
+@media screen and (min-width: 711px) and (max-width: 989px) {
+    #work {
+        top:149%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    #work {
+        top:150%;
+    }
+}
+
+.content {
     width:80%;
     margin-left:auto;
     margin-right:auto;
     padding:7% 0 7% 0;
     font-size:1.3em;
-    color:#222;
 }
 
-#content a, #content a:visited {
-    color:#222;
+.darktext {color:#333;}
+.darktext a, .darktext a:visited {
+    color:#333;
+}
+
+.lighttext {color:#fff;}
+.lighttext a, .lighttext a:visited {
+    color:#fff;
 }

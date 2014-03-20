@@ -43,6 +43,7 @@ html, body {
     position:absolute;
     top:105%;
     width:100%;
+    padding: 0 0 5% 0;
 }
 
 #work {
@@ -51,39 +52,39 @@ html, body {
     width:100%;
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 430px) {
+    #work {
+        top:165%;
+    }
+}
+
+@media screen and (min-width:431px) and (max-width: 600px) {
     #work {
         top:160%;
     }
 }
 
-@media screen and (min-width: 511px) and (max-width: 659px) {
+@media screen and (min-width: 601px) {
     #work {
-        top:156%;
+        top:155%;
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 659px) {
+@media screen and (min-height: 450px) and (max-height: 550px) {
     #work {
-        top:152%;
+        top:170%;
     }
 }
 
-@media screen and (min-width: 660px) and (max-width: 710px) {
+@media screen and (min-height: 551px) and (max-height: 650px) {
     #work {
-        top:154%;
+        top:165%;
     }
 }
 
-@media screen and (min-width: 711px) and (max-width: 989px) {
+@media screen and (min-height: 651px) and (max-height:700px) {
     #work {
-        top:149%;
-    }
-}
-
-@media screen and (min-width: 990px) {
-    #work {
-        top:150%;
+        top:160%;
     }
 }
 

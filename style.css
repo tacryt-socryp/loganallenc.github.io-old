@@ -42,7 +42,6 @@ html, body {
 #main {
     background-color:#fff;
     position:relative;
-    margin-top:60%;
     width:100%;
     z-index:2;
 }
@@ -60,6 +59,54 @@ html, body {
     margin-right:auto;
     padding:7% 0 7% 0;
     font-size:1.3em;
+}
+
+@media screen and (max-width:449px) {
+    #main {
+        margin-top:165%;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:599px) {
+    #main {
+        margin-top:150%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:659px) {
+    #main {
+        margin-top:135%;
+    }
+}
+
+@media screen and (min-width:660px) and (max-width:719px) {
+    #main {
+        margin-top:120%;
+    }
+}
+
+@media screen and (min-width:720px) and (max-width:809px) {
+    #main {
+        margin-top:105%;
+    }
+}
+
+@media screen and (min-width:810px) and (max-width:909px) {
+    #main {
+        margin-top:90%;
+    }
+}
+
+@media screen and (min-width:910px) and (max-width:1049px) {
+    #main {
+        margin-top:80%;
+    }
+}
+
+@media screen and (min-width:1050px) {
+    #main {
+        margin-top:75%;
+    }
 }
 
 .darktext {color:#333;}

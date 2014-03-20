@@ -1,9 +1,11 @@
 for (var layerGroupName in PSD) {
     window[layerGroupName] = PSD[layerGroupName];
+    console.log(layerGroupName);
 }
 
 for (var layerGroupName in PSD) {
  PSD[layerGroupName].originalFrame = window[layerGroupName].frame;
+ console.log(layerGroupName);
 }
 
 /*Splash.placeBefore(Home);
@@ -18,24 +20,34 @@ var fade = new Animation({
 fade.on("end", showHome());
 fade.start();*/
 
-function showHome() {
-    Home.placeBefore(Splash);
-}
 
-showHome();
+Splash.on("click", function(event) {      
+    Home.placeBefore(Splash);
+});
 
 Home.on("click", function(event) {
-    console.log(event);
     if (event.x < 510 && event.y < 100) {         
         Menu.placeBefore(Home);
+    } else if (event.x > 300  && event.y > 400) {
+        Calendar.placeBefore(Home);
+    }
+});
+
+Calendar.on("click", function(event) {
+    if (event.x < 510 && event.y < 100) {         
+        Menu.placeBefore(Calendar);
+    } else if (event.x > 300  && event.y > 400) {
+        Home.placeBefore(Calendar);
     }
 });
 
 Menu.on("click", function(event) {
-    if (event.x < 510 && event.y > 100 && event.y < 200) {
-        Edit.placeBefore(Menu);
-    } else if ((event.x < 510 && event.y < 100) || (event.x > 510)) {
+    if ((event.x < 510 && event.y > 100 && event.y < 200) || (event.x > 510)) {
         Home.placeBefore(Menu);
+    } else if (event.x < 510 && event.y < 100) {
+        //Search.placeBefore(Menu);
+    } else if (event.x < 510 && event.y > 200 && event.y < 300) {
+        Edit.placeBefore(Menu);
     }
 });
 

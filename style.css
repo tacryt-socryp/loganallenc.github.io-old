@@ -103,9 +103,15 @@ html, body {
     }
 }
 
-@media screen and (min-width:1050px) {
+@media screen and (min-width:1050px) and (max-width:1200px) {
     #main {
         margin-top:60%;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    #main {
+        margin-top:50%;
     }
 }
 

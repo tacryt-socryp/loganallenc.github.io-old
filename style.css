@@ -63,49 +63,49 @@ html, body {
 
 @media screen and (max-width:449px) {
     #main {
-        margin-top:165%;
+        margin-top:155%;
     }
 }
 
 @media screen and (min-width:450px) and (max-width:599px) {
     #main {
-        margin-top:150%;
+        margin-top:140%;
     }
 }
 
 @media screen and (min-width:600px) and (max-width:659px) {
     #main {
-        margin-top:135%;
+        margin-top:110%;
     }
 }
 
 @media screen and (min-width:660px) and (max-width:719px) {
     #main {
-        margin-top:120%;
+        margin-top:100%;
     }
 }
 
 @media screen and (min-width:720px) and (max-width:809px) {
     #main {
-        margin-top:105%;
+        margin-top:90%;
     }
 }
 
 @media screen and (min-width:810px) and (max-width:909px) {
     #main {
-        margin-top:90%;
+        margin-top:80%;
     }
 }
 
 @media screen and (min-width:910px) and (max-width:1049px) {
     #main {
-        margin-top:80%;
+        margin-top:70%;
     }
 }
 
 @media screen and (min-width:1050px) {
     #main {
-        margin-top:75%;
+        margin-top:60%;
     }
 }
 

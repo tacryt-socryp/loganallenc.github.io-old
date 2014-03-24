@@ -63,55 +63,55 @@ html, body {
 
 @media screen and (max-width:449px) {
     #main {
-        margin-top:157%;
+        margin-top:155%;
     }
 }
 
 @media screen and (min-width:450px) and (max-width:599px) {
     #main {
-        margin-top:142%;
+        margin-top:140%;
     }
 }
 
 @media screen and (min-width:600px) and (max-width:659px) {
     #main {
-        margin-top:112%;
+        margin-top:110%;
     }
 }
 
 @media screen and (min-width:660px) and (max-width:719px) {
     #main {
-        margin-top:102%;
+        margin-top:100%;
     }
 }
 
 @media screen and (min-width:720px) and (max-width:809px) {
     #main {
-        margin-top:92%;
+        margin-top:90%;
     }
 }
 
 @media screen and (min-width:810px) and (max-width:909px) {
     #main {
-        margin-top:82%;
+        margin-top:80%;
     }
 }
 
 @media screen and (min-width:910px) and (max-width:1049px) {
     #main {
-        margin-top:72%;
+        margin-top:70%;
     }
 }
 
 @media screen and (min-width:1050px) and (max-width:1200px) {
     #main {
-        margin-top:62%;
+        margin-top:60%;
     }
 }
 
 @media screen and (min-width:1201px) {
     #main {
-        margin-top:57%;
+        margin-top:55%;
     }
 }
 

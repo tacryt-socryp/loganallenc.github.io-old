@@ -14,25 +14,25 @@ html, body {
     height:100%;
     width:100%;
     z-index:1;
-}
-
-#headtext {
-    position:relative;
-    top:35%;
-	padding:0;
-    display:block;
-    font-size:3.2em;
-    width:100%;
     text-align:center;
 }
 
+#head img {
+    position: relative;
+    margin: 15% auto 0 auto;
+    width:150px;
+    height:150px;
+}
+
+#headtext {
+    margin:.2em 0 .2em 0;
+    font-size:3.2em;
+    width:100%;
+}
+
 #headlinks {
-	text-align:center;
-	position:relative;
-    top:32%;
     font-size:1.5em;
 	width:100%;
-    display:block;
 }
 
 #headlinks a, #headlinks a:visited {
@@ -63,7 +63,7 @@ html, body {
     font-size:1.3em;
 }
 
-@media screen and (max-width:449px) {
+@media (max-width:449px) {
     #main {
         margin-top:155%;
     }
@@ -75,54 +75,52 @@ html, body {
     }
 }
 
-@media screen and (min-width:600px) and (max-width:659px) {
+@media (min-width:600px) and (max-width:659px) {
     #main {
         margin-top:110%;
     }
 }
 
-@media screen and (min-width:660px) and (max-width:719px) {
+@media (min-width:660px) and (max-width:719px) {
     #main {
         margin-top:100%;
     }
 }
 
-@media screen and (min-width:720px) and (max-width:809px) {
+@media (min-width:720px) and (max-width:809px) {
     #main {
         margin-top:90%;
     }
 }
 
-@media screen and (min-width:810px) and (max-width:909px) {
+@media (min-width:810px) and (max-width:909px) {
     #main {
         margin-top:80%;
     }
 }
 
-@media screen and (min-width:910px) and (max-width:1049px) {
+@media (min-width:910px) and (max-width:1049px) {
     #main {
         margin-top:70%;
     }
 }
 
-@media screen and (min-width:1050px) and (max-width:1200px) {
+@media (min-width:1050px) and (max-width:1200px) {
     #main {
         margin-top:60%;
     }
 }
 
-@media screen and (min-width:1201px) {
+@media (min-width:1201px) {
     #main {
         margin-top:55%;
     }
 }
 
-.darktext {color:#333;}
-.darktext a, .darktext a:visited {
+.darktext, .darktext a, .darktext a:visited {
     color:#333;
 }
 
-.lighttext {color:#fff;}
-.lighttext a, .lighttext a:visited {
+.lighttext, .lighttext a, .lighttext a:visited {
     color:#fff;
 }

@@ -56,11 +56,30 @@ html, body {
 }
 
 .content {
-    width:80%;
     margin-left:auto;
     margin-right:auto;
     padding:7% 0 7% 0;
     font-size:1.3em;
+}
+
+@media (max-width:599px) {
+    .content {
+        width:85%;
+    }
+    
+    #work p {
+        margin-left:0;
+    }
+}
+
+@media (min-width:600px) {
+    .content {
+        width:80%;
+    }
+    
+    #work p {
+        margin-left:2em;
+    }
 }
 
 @media (max-width:449px) {

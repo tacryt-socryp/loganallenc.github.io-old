@@ -48,7 +48,7 @@ html, body {
 }
 
 #work {
-    background-color:#1abc9c;
+    background-color:#333;
     position:relative;
     margin-top:0px;
     width:100%;
@@ -121,6 +121,10 @@ html, body {
     color:#333;
 }
 
-.lighttext, .lighttext a, .lighttext a:visited {
+.lighttext {
     color:#fff;
+}
+
+.lighttext a, .lighttext a:visited {
+    color:#1abc9c;
 }

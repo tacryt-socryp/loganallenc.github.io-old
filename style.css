@@ -54,7 +54,7 @@ html, body {
     margin-right:auto;
     padding:7% 0 7% 0;
     font-size:1.3em;
-    max-width:1000px;
+    max-width:995px;
 }
 
 @media (max-width:599px) {

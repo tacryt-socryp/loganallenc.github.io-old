@@ -29,14 +29,14 @@ function parseDocument(xml) {
     }
     
     displayResults(obj);
-    
-    console.log(obj);
 }
 
 function displayResults(obj) {
     var div,
         p,
         a = [];
+    var tPlays,
+        tArtist;
     
     for (var key in obj) {
         if (obj[key].toString() !== "NaN" && obj[key] > 4) {
@@ -45,8 +45,6 @@ function displayResults(obj) {
     }
         
     for (var x=0; x < a.length; x++) {
-        var tPlays,
-            tArtist;
         for (var y=x; y < a.length; y++) {
             if (a[y].plays > a[x].plays) {
                 tPlays = a[y].plays;
@@ -61,20 +59,13 @@ function displayResults(obj) {
         }
     }
     
-    console.log(a);
-    
     for(var x=0; x < a.length; x++) {
-        console.log(a[x].artist);
         div = document.createElement("div");
         div.setAttribute("style","display:block; height:50px; width:" + a[x].plays*38 + "px; background-color:#3498db");
         p = document.createElement("p");
         p.innerHTML = a[x].artist + " &#8212; " + a[x].plays;
         div.appendChild(p);
         document.body.appendChild(div);
-    }
-    
-    for (var x = 0; x < document.body.children.length; x++) {
-        console.log(element);
     }
 }
 

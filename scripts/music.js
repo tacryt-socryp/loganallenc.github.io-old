@@ -15,16 +15,22 @@ function parseDocument(xml) {
     var obj = {};
     var key,
         child,
-        xml;
+        xml,
+        stuff;
     
     xml = xml.firstChild;
     for (var a=0; a < xml.childElementCount; a++) {
         child = xml.childNodes[a].nextElementSibling;
         key = child.getElementsByTagName("artist")[0].innerHTML;
         if(obj[key] !== obj[key]) {
-            obj[key] = parseInt(child.getElementsByTagName("playcount")[0].innerHTML);
+            obj[key] = {};
+            obj[key]["plays"] = parseInt(child.getElementsByTagName("playcount")[0].innerHTML);
+            obj[key]["songs"] = [];
+            obj[key]["songs"].push(child.getElementsByTagName("name")[0].innerHTML);
         } else {
-            obj[key] = obj[key] + parseInt(child.getElementsByTagName("playcount")[0].innerHTML);
+            
+            obj[key]["plays"] = obj[key]["plays"] + parseInt(child.getElementsByTagName("playcount")[0].innerHTML);
+            obj[key]["songs"].push(child.getElementsByTagName("name")[0].innerHTML);
         }
     }
     
@@ -39,8 +45,12 @@ function displayResults(obj) {
         tArtist;
     
     for (var key in obj) {
-        if (obj[key].toString() !== "NaN" && obj[key] > 4) {
-            a.push({"artist":key,"plays":obj[key]})
+        if (obj[key]["plays"].toString() !== "NaN" && obj[key]["plays"] > 4) {
+            a.push({
+                "artist":key,
+                "plays":obj[key]["plays"],
+                "songs":obj[key]["songs"]
+            });
         }
     }
         

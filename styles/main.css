@@ -112,25 +112,25 @@ html, body {
 
 @media (min-width:720px) and (max-width:809px) {
     #main {
-        margin-top:85%;
+        margin-top:88%;
     }
 }
 
 @media (min-width:810px) and (max-width:909px) {
     #main {
-        margin-top:75%;
+        margin-top:78%;
     }
 }
 
 @media (min-width:910px) and (max-width:1049px) {
     #main {
-        margin-top:65%;
+        margin-top:68%;
     }
 }
 
 @media (min-width:1050px) and (max-width:1200px) {
     #main {
-        margin-top:55%;
+        margin-top:58%;
     }
 }
 

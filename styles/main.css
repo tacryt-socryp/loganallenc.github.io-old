@@ -88,55 +88,55 @@ html, body {
 
 @media (max-width:449px) {
     #main {
-        margin-top:155%;
+        margin-top:150%;
     }
 }
 
 @media screen and (min-width:450px) and (max-width:599px) {
     #main {
-        margin-top:140%;
+        margin-top:115%;
     }
 }
 
 @media (min-width:600px) and (max-width:659px) {
     #main {
-        margin-top:110%;
+        margin-top:105%;
     }
 }
 
 @media (min-width:660px) and (max-width:719px) {
     #main {
-        margin-top:100%;
+        margin-top:95%;
     }
 }
 
 @media (min-width:720px) and (max-width:809px) {
     #main {
-        margin-top:90%;
+        margin-top:85%;
     }
 }
 
 @media (min-width:810px) and (max-width:909px) {
     #main {
-        margin-top:80%;
+        margin-top:75%;
     }
 }
 
 @media (min-width:910px) and (max-width:1049px) {
     #main {
-        margin-top:70%;
+        margin-top:65%;
     }
 }
 
 @media (min-width:1050px) and (max-width:1200px) {
     #main {
-        margin-top:60%;
+        margin-top:55%;
     }
 }
 
 @media (min-width:1201px) {
     #main {
-        margin-top:55%;
+        margin-top:43%;
     }
 }
 

@@ -136,7 +136,11 @@ html, body {
 
 @media (min-width:1201px) {
     #main {
-        margin-top:47%;
+        margin-top:50%;
+    }
+    
+    .content {
+        padding:5% 0 5% 0 !important;
     }
 }
 

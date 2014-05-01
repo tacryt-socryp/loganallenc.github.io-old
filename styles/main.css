@@ -1,5 +1,5 @@
 html, body {
-    font-family:"Raleway", sans-serif;
+    font-family:"Open Sans", sans-serif;
     padding:0;
     margin:0;
 }
@@ -15,31 +15,8 @@ html, body {
     width:100%;
     z-index:1;
     text-align:center;
+    color:#fff;
 }
-
-#head img {
-    position: relative;
-    margin: 16% auto 0 auto;
-    width:192px;
-    height:192px;
-}
-
-
-#headtext {
-    margin:.2em 0 .2em 0;
-    font-size:3.2em;
-    width:100%;
-}
-
-#headlinks {
-    font-size:1.5em;
-	width:100%;
-}
-
-#headlinks a, #headlinks a:visited {
-    color:#000;
-}
-
 
 #work {
     background-color:#2b303b;
@@ -77,66 +54,109 @@ html, body {
     }
 }
 
+#headlinks {
+    position:relative;
+    top:45px;
+    display:inline-block;
+    text-align:center;
+    width:100%;
+}
+
+#headlinks a, #headlinks a:visited {
+    color:#555;
+    text-decoration:none;
+}
+
+#headlinks a:hover {
+    color:#1abc9c;
+    transition: color 0.2s linear;
+}
 
 #main {
     background-color:#fff;
     position:relative;
-    margin-top:0px;
+    margin-top:0;
     width:100%;
     z-index:2;
 }
 
+#bleed {
+    position: relative;
+    top: -128px;
+    left: 50%;
+    margin-left: -128px;
+    width: 256px;
+    height: 256px;
+    margin-bottom:-130px;
+}
+
 @media (max-width:449px) {
     #main {
-        margin-top:150%;
+        margin-top:112%;
+    }
+    
+    #headlinks {
+        top:20px;
+    }
+    
+    #bleed {
+        margin-bottom:-115px;
     }
 }
 
-@media screen and (min-width:450px) and (max-width:599px) {
-    #main {
-        margin-top:117%;
-    }
-}
-
-@media (min-width:600px) and (max-width:659px) {
-    #main {
-        margin-top:107%;
-    }
-}
-
-@media (min-width:660px) and (max-width:719px) {
+@media screen and (min-width:450px) and (max-width:625px) {
     #main {
         margin-top:97%;
     }
-}
-
-@media (min-width:720px) and (max-width:809px) {
-    #main {
-        margin-top:87%;
+    
+    #headlinks {
+        top:30px;
+    }
+    
+    #bleed {
+        margin-bottom:-130px;
     }
 }
 
-@media (min-width:810px) and (max-width:909px) {
+@media (min-width:626px) and (max-width:719px) {
     #main {
         margin-top:77%;
     }
 }
 
-@media (min-width:910px) and (max-width:1049px) {
+@media (min-width:720px) and (max-width:809px) {
+    #main {
+        margin-top:72%;
+    }
+}
+
+@media (min-width:810px) and (max-width:909px) {
     #main {
         margin-top:67%;
     }
 }
 
-@media (min-width:1050px) and (max-width:1200px) {
+@media (min-width:910px) and (max-width:970px) {
+    #main {
+        margin-top:62%;
+    }
+}
+
+@media (min-width:971px) and (max-width:1050px) {
     #main {
         margin-top:57%;
     }
 }
 
-@media (min-width:1201px) {
+@media (min-width:1051px) and (max-width:1160px) {
     #main {
-        margin-top:50%;
+        margin-top:52%;
+    }
+}
+
+@media (min-width:1161px) {
+    #main {
+        margin-top:37%;
     }
     
     .content {
@@ -155,4 +175,14 @@ html, body {
 
 .lighttext a, .lighttext a:visited {
     color:#1abc9c;
+}
+
+.lighttext a:hover {
+    color:#fff;
+    transition: color 0.2s linear;
+}
+
+.darktext a:hover {
+    color:#1abc9c;
+    transition: color 0.2s linear;
 }

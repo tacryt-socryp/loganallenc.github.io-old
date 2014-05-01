@@ -42,6 +42,10 @@ html, body {
     #work p {
         margin-left:0em;
     }
+    
+    .content h2 {
+        font-size:95%;
+    }
 }
 
 @media (min-width:600px) {

@@ -104,6 +104,10 @@ html, body {
     }
     
     #bleed {
+        top: -96px;
+        margin-left: -96px;
+        width: 192px;
+        height: 192px;
         margin-bottom:-115px;
     }
 }
@@ -118,6 +122,10 @@ html, body {
     }
     
     #bleed {
+        top: -96px;
+        margin-left: -96px;
+        width: 192px;
+        height: 192px;
         margin-bottom:-130px;
     }
 }
@@ -160,11 +168,11 @@ html, body {
 
 @media (min-width:1161px) {
     #main {
-        margin-top:37%;
+        margin-top:32%;
     }
     
     .content {
-        padding:5% 0 5% 0 !important;
+        padding:4% 0 4% 0 !important;
     }
 }
 

@@ -166,7 +166,17 @@ html, body {
     }
 }
 
-@media (min-width:1161px) {
+@media (min-width:1161px) and (max-width:1240px) {
+    #main {
+        margin-top:47%;
+    }
+    
+    .content {
+        padding:4% 0 4% 0 !important;
+    }
+}
+
+@media (min-width:1241px) {
     #main {
         margin-top:32%;
     }

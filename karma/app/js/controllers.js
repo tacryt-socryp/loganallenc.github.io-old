@@ -17,23 +17,26 @@ angular.module('myApp.controllers', [])
         $scope.number = Number(($scope.number).toFixed(1));
     }
 }])
-.controller('translateCtrl', ['$scope', function($scope) {
+.controller('translateCtrl', ['$scope','$http', function($scope, $http) {
     $scope.translate = {
         english: 'Coffee.',
         foreign: ''
     };
-
+    
+    console.log("TRANSLATING CONTROLLER");
+    
     $scope.translateThis = function() {
-
+        console.log("TRANSLATING THIS NOW");
         var link =  'https://www.googleapis.com/language/translate/v2' +
             '?key=AIzaSyDO4fBy8E3mlo_V6dUO1jawJf4oO5VVZlY' +
             '&source=en&target=de&q=' +
             encodeURIComponent($scope.translate.english);
-        $http({method: 'GET', url: link}).
-        success(function(data, status, headers, config) {
+        $http({method: 'GET', url: link})
+        .success(function(data, status, headers, config) {
+            console.log(data);
             $scope.translate.foreign = data.data.translations[0].translatedText;
-        }).
-        error(function(data, status, headers, config) {
+        })
+        .error(function(data, status, headers, config) {
             console.log(status);
         });
     }

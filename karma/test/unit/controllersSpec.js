@@ -7,14 +7,12 @@ describe('controllers', function(){
         //spec body
         var numberCtrl = $controller('numberCtrl', { $scope: {} });
         expect(typeof numberCtrl).to.not.equal("undefined");
-        expect(typeof numberCtrl.incrementNumber).to.not.equal("undefined");
     }));
     
     it('should ...', inject(function($controller) {
         //spec body
         var translateCtrl = $controller('translateCtrl', { $scope: {}, $http: {} });
         expect(typeof translateCtrl).to.not.equal("undefined");
-        expect(typeof translateCtrl.translateThis).to.not.equal("undefined");
     }));
     
     it('should ...', inject(function($controller) {

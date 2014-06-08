@@ -115,6 +115,10 @@ html, body {
     .placeholder {
         display:none;
     }
+    
+    .content h2 {
+        text-align:center;
+    }
 }
 
 #headlinks {

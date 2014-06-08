@@ -79,7 +79,19 @@ html, body {
     .content h2 {
         font-size:1.3em;
     }
+}
+
+@media (min-width:600px) {
+    .content {
+        width:80%;
+    }
     
+    #work p {
+        margin-left:2em;
+    }
+}
+
+@media (max-width:920px) {
     .year {
         float:none;
         display:block;
@@ -102,16 +114,6 @@ html, body {
     
     .placeholder {
         display:none;
-    }
-}
-
-@media (min-width:600px) {
-    .content {
-        width:80%;
-    }
-    
-    #work p {
-        margin-left:2em;
     }
 }
 

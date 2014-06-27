@@ -149,9 +149,9 @@ html, body {
 
 #bleed {
     position: relative;
-    top: -127px;
+    top: -128px;
     left: 50%;
-    margin-left: -127px;
+    margin-left: -128px;
     width: 254px;
     height: 255px;
     margin-bottom:-130px;

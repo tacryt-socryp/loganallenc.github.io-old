@@ -149,11 +149,11 @@ html, body {
 
 #bleed {
     position: relative;
-    top: -128px;
+    top: -127px;
     left: 50%;
-    margin-left: -128px;
-    width: 256px;
-    height: 256px;
+    margin-left: -127px;
+    width: 254px;
+    height: 255px;
     margin-bottom:-130px;
 }
 

@@ -22,7 +22,9 @@ function httpGet(url, callback) {
     xmlHttp.open("GET", url, false);
     xmlHttp.send(null);
     console.log(xmlHttp.responseText);
-    permId = JSON.parse(xmlHttp.responseText).IdentityId;
+    var data = JSON.parse(xmlHttp.responseText);
+    
+    permId = data.permanentKey;
     callback();
 }
 

@@ -25,6 +25,7 @@ function httpGet(url, callback) {
     var data = JSON.parse(xmlHttp.responseText);
     
     permId = data.permanentKey;
+    console.log(permId, data);
     callback();
 }
 

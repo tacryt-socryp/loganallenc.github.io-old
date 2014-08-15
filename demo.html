@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <title>AWS Demo</title>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.0.13.min.js"></script>
+    <script>
+window.onload = function() {
+AWS.config.region = "us-east-1";
+
+var cognitoidentity = new AWS.CognitoIdentity();
+var sts = new AWS.STS();
+var dynamodb = new AWS.DynamoDB();
+
+var idPool = "us-east-1:e4ddfb97-1a5f-40ec-8165-62dd272943e3";
+var permId = "";
+var tempToken = "";
+
+function httpGet(url, callback) {
+    var xmlHttp = null;
+
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", url, false);
+    xmlHttp.send(null);
+    console.log(xmlHttp.responseText);
+    permId = JSON.parse(xmlHttp.responseText).IdentityId;
+    callback();
+}
+
+httpGet("http://mandrill.staging.gather.so/tempkey", getTemporary);
+
+function getTemporary() {
+    var tempParams = {
+        IdentityId: permId // required
+    };
+
+    // Get a token in the browser using the permanentId supplied by server.
+    var tempId;
+    cognitoidentity.getOpenIdToken(tempParams, function(err, data) {
+        if (err) {
+            console.log(err, err.stack);
+        } else {
+            console.log(data);
+            tempToken = data.Token;
+            useTokenRequest();
+        }
+    });
+}
+
+function useTokenRequest() {
+    var roleParams = {
+        RoleArn: "arn:aws:iam::608791496025:role/cognito-role",
+        RoleSessionName: "cognito-role",
+        WebIdentityToken: tempToken,
+        DurationSeconds: 900
+    };
+
+    sts.assumeRoleWithWebIdentity(roleParams, function(err, data) {
+        if (err) {
+            console.log(err, err.stack);
+        } else {
+            console.log(data);
+            dynamodb = new AWS.DynamoDB({
+                accessKeyId: data.Credentials.AccessKeyId,
+                secretAccessKey: data.Credentials.SecretAccessKey,
+                sessionToken: data.Credentials.SessionToken
+            });
+            readDynamo();
+        }
+    });
+}
+
+function readDynamo() {
+    var dynParams = {
+        TableName: "mandrill-webhooks",
+        AttributesToGet: [
+            "opens",
+            "clicks",
+            "sendtime",
+            "rejected"
+        ]
+    };
+
+    dynamodb.scan(dynParams, function(err, data) {
+        if (err) {
+            console.log(err, err.stack);
+        } else {
+            console.log(data);
+        }
+    });
+}
+
+};
+    </script>
+</head>
+<body>
+</body>
+</html>

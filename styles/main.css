@@ -22,6 +22,7 @@ html, body {
     background-color:#2b303b;
     position:relative;
     margin-top:0px;
+    padding-top:100px;
     width:100%;
     z-index:2;
 }
@@ -154,22 +155,47 @@ html, body {
     transition: color 0.2s linear;
 }
 
+#main::before {
+	content: "";
+	display: block;
+	position:absolute;
+	right:0;
+	top:0;
+	width: 0;
+	height: 0;
+	border-top: 500px solid transparent;
+	border-left: 4000px solid #fff;
+	margin-top:-500px;
+}
+
 #main {
     background-color:#fff;
     position:relative;
-    margin-top:0;
     width:100%;
-    z-index:2;
+    z-index:3;
+}
+
+#main::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 500px solid transparent;
+    border-right: 4000px solid #fff;
+    margin-bottom: -500px;
 }
 
 #bleed {
     position: relative;
-    top: -128px;
+    top: -196px;
     left: 50%;
     margin-left: -128px;
     width: 254px;
     height: 255px;
-    margin-bottom:-130px;
+    margin-bottom:-230px;
 }
 
 @media (max-width:449px) {

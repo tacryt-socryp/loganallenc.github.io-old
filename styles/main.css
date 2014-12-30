@@ -175,7 +175,7 @@ html, body {
 
 #headlinks {
     position:relative;
-    top:45px;
+    top:55px;
     display:inline-block;
     text-align:center;
     width:100%;
@@ -189,7 +189,7 @@ html, body {
 }
 
 #headlinks a:hover {
-    color:#1abc9c;
+    color:#EC407A;
     transition: color 0.2s linear;
 }
 
@@ -242,7 +242,7 @@ html, body {
     }
 
     #headlinks {
-        top:20px;
+        top:30px;
     }
 
     #bleed {
@@ -260,7 +260,7 @@ html, body {
     }
 
     #headlinks {
-        top:30px;
+        top:40px;
     }
 
     #bleed {

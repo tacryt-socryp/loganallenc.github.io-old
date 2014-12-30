@@ -14,18 +14,12 @@ html, body {
     background-size:cover;
     height:100%;
     width:100%;
-    z-index:1;
-    text-align:center;
-    color:#fff;
 }
 
 #work {
     background-color:#2b303b;
     position:relative;
-    margin-top:0px;
     padding-top:150px;
-    width:100%;
-    z-index:4;
 }
 
 #work::after {
@@ -34,8 +28,6 @@ html, body {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 0;
-    height: 0;
     border-bottom: 300px solid transparent;
     border-right: 2000px solid #2b303b;
     margin-bottom: -299px;
@@ -86,10 +78,7 @@ html, body {
     background-color: #fff;
     text-align: center;
     position:relative;
-    margin-top:0px;
     padding-top:150px;
-    width:100%;
-    z-index:3;
 }
 
 #press a {
@@ -100,14 +89,6 @@ html, body {
     #press {
         padding-top:750px;
     }
-}
-
-.year {
-    float:left;
-    width:128px;
-    height:90px;
-    margin: 0 30px;
-    text-align: center;
 }
 
 .placeholder {
@@ -201,7 +182,6 @@ html, body {
     z-index:5;
 }
 
-
 #headlinks a, #headlinks a:visited {
     color:#555;
     text-decoration:none;
@@ -218,8 +198,6 @@ html, body {
 	position:absolute;
 	right:0;
 	top:0;
-	width: 0;
-	height: 0;
 	border-top: 300px solid transparent;
 	border-left: 2000px solid #fff;
 	margin-top:-299px;
@@ -238,8 +216,6 @@ html, body {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 0;
-    height: 0;
     border-bottom: 300px solid transparent;
     border-right: 2000px solid #fff;
     margin-bottom: -299px;
@@ -287,7 +263,7 @@ html, body {
     }
 }
 
-@media screen and (min-width:450px) and (max-width:625px) {
+@media (min-width:450px) and (max-width:625px) {
     #main {
         margin-top:97%;
     }

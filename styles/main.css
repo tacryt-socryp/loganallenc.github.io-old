@@ -20,6 +20,7 @@ html, body {
     background-color:#2b303b;
     position:relative;
     padding-top:150px;
+    z-index:4;
 }
 
 #work::after {

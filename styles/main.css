@@ -238,11 +238,11 @@ html, body {
 
 #bleed {
     position: relative;
-    top: -196px;
+    top: -200px;
     left: 50%;
     margin-left: -128px;
-    width: 254px;
-    height: 255px;
+    width: 256px;
+    height: 256px;
     margin-bottom:-230px;
 }
 
@@ -256,7 +256,7 @@ html, body {
     }
 
     #bleed {
-        top: -96px;
+        top: -128px;
         margin-left: -96px;
         width: 192px;
         height: 192px;

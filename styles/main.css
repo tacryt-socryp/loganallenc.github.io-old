@@ -179,6 +179,7 @@ html, body {
     display:inline-block;
     text-align:center;
     width:100%;
+    z-index:5;
 }
 
 

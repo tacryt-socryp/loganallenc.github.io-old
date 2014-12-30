@@ -51,7 +51,7 @@ html, body {
     max-width:995px;
 }
 
-.content h1, .content h2 {
+.content h1 {
     text-align: center;
 }
 
@@ -145,16 +145,6 @@ html, body {
 }
 
 @media (max-width:920px) {
-    .year {
-        float:none;
-        display:block;
-        text-align:center;
-        margin-right:auto;
-        margin-left:auto;
-        margin-top:25px;
-        margin-bottom:-70px;
-    }
-
     .content img {
         float:none;
         display:block;
@@ -167,10 +157,6 @@ html, body {
 
     .placeholder {
         display:none;
-    }
-
-    .content h2 {
-        text-align:center;
     }
 }
 

@@ -38,7 +38,15 @@ html, body {
     height: 0;
     border-bottom: 300px solid transparent;
     border-right: 2000px solid #2b303b;
-    margin-bottom: -300px;
+    margin-bottom: -299px;
+}
+
+@media (min-width: 2001px) {
+    #work::after {
+        border-bottom: 600px solid transparent;
+        border-right: 4812px solid #2b303b;
+        margin-bottom: -594px;
+    }
 }
 
 .content {
@@ -82,6 +90,12 @@ html, body {
 
 #press a {
     white-space: nowrap;
+}
+
+@media (min-width: 2001px) {
+    #press {
+        padding-top:750px;
+    }
 }
 
 .year {
@@ -203,7 +217,7 @@ html, body {
 	height: 0;
 	border-top: 300px solid transparent;
 	border-left: 2000px solid #fff;
-	margin-top:-300px;
+	margin-top:-299px;
 }
 
 #main {
@@ -223,7 +237,21 @@ html, body {
     height: 0;
     border-bottom: 300px solid transparent;
     border-right: 2000px solid #fff;
-    margin-bottom: -300px;
+    margin-bottom: -299px;
+}
+
+@media (min-width: 2001px) {
+    #main::before {
+        border-top: 600px solid transparent;
+        border-left: 4812px solid #fff;
+        margin-top:-594px;
+    }
+
+    #main::after {
+        border-bottom: 600px solid transparent;
+        border-right: 4812px solid #fff;
+        margin-bottom: -594px;
+    }
 }
 
 #bleed {

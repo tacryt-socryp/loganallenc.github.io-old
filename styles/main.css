@@ -128,10 +128,6 @@ html, body {
     #work p {
         margin-left:0em;
     }
-
-    .content h2 {
-        font-size:1.3em;
-    }
 }
 
 @media (min-width:600px) {

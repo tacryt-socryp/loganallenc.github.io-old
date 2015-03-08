@@ -17,7 +17,7 @@ html, body {
 }
 
 #work {
-    background-color:#2b303b;
+    background-color:#263238;
     position:relative;
     padding-top:150px;
     z-index:4;
@@ -30,14 +30,14 @@ html, body {
     left: 0;
     bottom: 0;
     border-bottom: 300px solid transparent;
-    border-right: 2000px solid #2b303b;
+    border-right: 2000px solid #263238;
     margin-bottom: -299px;
 }
 
 @media (min-width: 2001px) {
     #work::after {
         border-bottom: 600px solid transparent;
-        border-right: 4812px solid #2b303b;
+        border-right: 4812px solid #263238;
         margin-bottom: -594px;
     }
 }
@@ -330,7 +330,7 @@ html, body {
 }
 
 .lighttext a, .lighttext a:visited {
-    color:#EC407A;
+    color:#FFC107;
 }
 
 .lighttext a:hover {
@@ -339,6 +339,6 @@ html, body {
 }
 
 .darktext a:hover {
-    color:#EC407A;
+    color:#FFC107;
     transition: color 0.2s linear;
 }

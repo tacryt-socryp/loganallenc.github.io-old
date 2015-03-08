@@ -171,7 +171,7 @@ html, body {
 }
 
 #headlinks a:hover {
-    color:#EC407A;
+    color:#FFC107;
     transition: color 0.2s linear;
 }
 

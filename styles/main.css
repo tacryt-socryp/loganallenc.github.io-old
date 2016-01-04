@@ -296,7 +296,7 @@ html, body {
 }
 
 .lighttext a, .lighttext a:visited {
-    color:#FFC107;
+    color:#1ABC9C;
 }
 
 .lighttext a:hover {
@@ -305,6 +305,6 @@ html, body {
 }
 
 .darktext a:hover {
-    color:#FFC107;
+    color:#1ABC9C;
     transition: color 0.2s linear;
 }

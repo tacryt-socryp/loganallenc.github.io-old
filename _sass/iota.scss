@@ -2,7 +2,7 @@
 @import "iota/syntax-highlighting";
 
 $horizontal-rule: 1px solid #bbb;
-$spacing: 0.5em;
+$spacing: 1em;
 
 // some inspiration taken from http://bettermotherfuckingwebsite.com/
 
@@ -81,6 +81,7 @@ header.site {
 
 footer {
     // readability - clear separation of content
+    margin-top: $spacing;
     border-top: $horizontal-rule;
 }
 

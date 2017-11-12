@@ -203,20 +203,20 @@ template { display: none; }
 
 html { font-family: serif; font-size: 18px; line-height: 1.6; }
 
-body { max-width: 650px; margin: 0 auto; padding: 0 0.5em; }
+body { max-width: 650px; margin: 0 auto; padding: 0 1em; }
 
 time { font-style: italic; }
 
-header, footer { padding: 0.5em 0; }
+header, footer { padding: 1em 0; }
 header p, footer p { margin: 0; }
 header h1, header h2, footer h1, footer h2 { margin: 0; }
 
 header.site { border-bottom: 1px solid #bbb; }
 header.site .title { font-size: 1.5em; font-weight: bold; }
-header.site .title a { padding-bottom: 0.5em; }
+header.site .title a { padding-bottom: 1em; }
 header.site nav { text-align: right; }
-header.site nav a { margin-left: 0.5em; }
+header.site nav a { margin-left: 1em; }
 
-footer { border-top: 1px solid #bbb; }
+footer { margin-top: 1em; border-top: 1px solid #bbb; }
 
-article { margin: 0.5em 0; }
+article { margin: 1em 0; }

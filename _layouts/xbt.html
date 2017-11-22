@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+
+function request(url, callback) {
+  var xmlhttp = new XMLHttpRequest();
+
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      callback(this.responseText);
+    }
+  };
+
+  xmlhttp.open("GET", url, true);
+  xmlhttp.send();
+}
+
+window.onload = function() {
+  request("https://api.coindesk.com/v1/bpi/historical/close.json", function(response) {
+    var data = JSON.parse(response);
+    console.log(data);
+    var tester = document.getElementById('tester');
+    var x = Object.keys(data.bpi);
+    var y = [];
+    for (var keys in x) {
+      y.push(data.bpi[x[keys]]);
+    }
+    Plotly.plot(tester, [{
+    	x: x,
+    	y: y
+    }], {
+    	margin: { t: 0 }
+    });
+  });
+};
+
+</script>
+<p>This is a graph of $BTC.</p>
+<div id="tester" style="width:600px;height:250px;"></div>
